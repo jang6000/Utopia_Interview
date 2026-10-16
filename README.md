@@ -1,3 +1,4 @@
+Hi, I'm Dinie. I built CreatorHub, an internal platform with three user roles during my apprentice year in Durioo, and currently running a freelance of building SME website using an AI coding assistant. This repo is how I keep that process careful and repeatable.
 # How I work with an AI coding assistant
 
 This repo is the setup I use every day with Claude Code. It was put together for my application to Utopia, in answer to the question about rules files.
