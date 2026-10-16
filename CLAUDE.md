@@ -45,7 +45,7 @@ I write fast, in lowercase, with typos. Read past them.
 
 ## The working loop
 
-1. **Understand before scanning.** Read the architecture summary before opening random files.
+1. **Understand before scanning.** Read the architecture summary, or the knowledge graph if the project has one, before opening random files.
 2. **Use the right skill.** Check what exists before writing from scratch.
 3. **Align before building.** For anything non trivial, interview me first to surface decisions.
 4. **Review before ship.** Do an adversarial review of any real change before lint or build. Never ship over an unresolved correctness problem.
@@ -78,3 +78,17 @@ Cheaper models brainstorm, map a codebase, and expand settled boilerplate. The s
 | `/ship` | Review, docs, lint, infrastructure deploy, push, verify. No skipping phases. |
 
 The files live in `.claude/commands/` and `.claude/skills/`.
+
+## Tools and skills I keep installed
+
+Skills are small instruction packs the assistant loads when a task matches. I check what exists before writing from scratch, and I search for a skill when there is a gap.
+
+| Skill | What I use it for |
+|---|---|
+| `graphify` | Turns code, docs, papers or images into a knowledge graph with clusters and an audit report. I read the graph before opening files at random, and `/ship` refreshes it with the docs when the project has one. |
+| `tailwind-v4-shadcn` and `tailwind-design-system` | Tailwind v4 and shadcn/ui setup, design tokens and theming, so I extend the project's existing components instead of inventing new ones. |
+| `nextjs-app-router-patterns` | Next.js App Router patterns: server components, streaming and data fetching. |
+| `firebase-firestore`, `firebase-auth-basics`, `firebase-security-rules-auditor` | Firestore data design, sign in, and an audit of security rules every time they change. |
+| `find-skills` | Finds a skill when none of the above fits the task. |
+
+I do not run any MCP servers at the moment. Everything above is plain skills and slash commands, so the whole setup is readable text in this repo.
