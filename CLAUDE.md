@@ -86,7 +86,7 @@ Skills are small instruction packs the assistant loads when a task matches. I ch
 | Skill | What I use it for |
 |---|---|
 | `graphify` | Turns code, docs, papers or images into a knowledge graph with clusters and an audit report. I read the graph before opening files at random, and `/ship` refreshes it with the docs when the project has one. |
-| `tailwind-v4-shadcn` and `tailwind-design-system` | Tailwind v4 and shadcn/ui setup, design tokens and theming, so I extend the project's existing components instead of inventing new ones. |
+| `tailwind-v4-shadcn` and `tailwind-design-system` | Tailwind v4 and shadcn/ui, the component and theming base I used on CreatorHub. Design tokens and theming live in one place, and I extend the existing components instead of inventing new ones. |
 | `nextjs-app-router-patterns` | Next.js App Router patterns: server components, streaming and data fetching. |
 | `firebase-firestore`, `firebase-auth-basics`, `firebase-security-rules-auditor` | Firestore data design, sign in, and an audit of security rules every time they change. |
 | `find-skills` | Finds a skill when none of the above fits the task. |
